@@ -1,0 +1,12 @@
+.footer-container {
+  min-height: 150px;
+  background-color: #282c34;
+  color: #dfdfdf;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.footer-container .content-wrapper p {
+  margin-top: 10px;
+}

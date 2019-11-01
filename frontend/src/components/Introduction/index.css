@@ -1,0 +1,37 @@
+.carousel-wrapper img {
+  max-height: 600px;
+}
+
+.introduction-container {
+  padding: 0;
+  background-color: #2B3038;
+  display: flex;
+  flex-direction: column;
+}
+
+.games-grid-wrapper {
+  padding: 100px 30px;
+}
+
+.section-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-wrapper .more-btn {
+  color: white;
+  font-weight: 250;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.title-wrapper .more-btn:hover {
+  color: #e2325a;
+}

@@ -1,0 +1,27 @@
+.navigation-bar {
+  flex-grow: 1;
+  padding: 0 100px;
+}
+
+.navigation-bar .games-list-link {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navigation-bar .games-list-link:hover {
+  padding-bottom: 10px;
+  animation-name: color-faded-in-out;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color-faded-in-out {
+  from {
+    color: white;
+  }
+
+  to {
+    color: #e2325a;
+  }
+}
