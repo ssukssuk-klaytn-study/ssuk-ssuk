@@ -13,6 +13,14 @@ export default () => {
             res.json(projects);
         })
     });
+
+    // GET api/projects/:id
+    api.get('/:id', (req, res) => {
+        project.findOne({ id: req.param.id }, (err, project) => {
+            if (err) return res.status.json({ 'status': 'error' })
+            res.json(project);
+        })
+    })
     
     // POST api/projects/new
     api.post('/new', (req, res) => {
@@ -46,7 +54,7 @@ export default () => {
         });
     })
 
-    // DELETE api/projexts/
+    // DELETE api/projects/:id
     api.delete('/:id', (req, res) => {
         // TODO Validation
         Project.findOneAndDelete({ id: req.param.id}, (err, project) => {
