@@ -1,6 +1,4 @@
-
 const mongoose = require('mongoose');
-const autoIncrement = require('mongoose-auto-increment');
 
 export default () => {
   function connect() {
@@ -12,8 +10,6 @@ export default () => {
     });
   }
   connect();
-  autoIncrement.initialize(mongoose.connection);
   mongoose.connection.on('disconnected', connect);
-  require('./models/projects.js');
-//   require('./user.js'); // user.js는 나중에 만듭니다.
+  require('./models/Projects.js');
 };
