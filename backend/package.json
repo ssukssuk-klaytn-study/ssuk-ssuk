@@ -35,7 +35,8 @@
     "mongoose": "^5.7.7",
     "mongoose-auto-increment": "^5.0.1",
     "morgan": "^1.8.0",
-    "resource-router-middleware": "^0.6.0"
+    "resource-router-middleware": "^0.6.0",
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
