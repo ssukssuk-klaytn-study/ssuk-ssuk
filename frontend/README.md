@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 React 코드는 [Create React App](https://github.com/facebook/create-react-app). 을 사용해 구성하였습니다.
 
 ## Available Scripts
 
