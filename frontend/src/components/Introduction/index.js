@@ -11,34 +11,34 @@ import { Grid } from '@material-ui/core';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Introduction = () => {
-  const Row = () => {
-    return (
-      <React.Fragment>
-        <Grid container item xs={3} justify="center">
-          <a href="/">
-            <Game />
-          </a>
-        </Grid>
-        <Grid container item xs={3} justify="center">
-          <a href="/">
-            <Game />
-          </a>
-        </Grid>
-        <Grid container item xs={3} justify="center">
-          <a href="/">
-            <Game />
-          </a>
-        </Grid>
-        <Grid container item xs={3} justify="center">
-          <a href="/">
-            <Game />
-          </a>
-        </Grid>
-      </React.Fragment>
-    );
-  };
+const Row = () => {
+  return (
+    <React.Fragment>
+      <Grid container item xs={3} justify="center">
+        <a href="/">
+          <Game />
+        </a>
+      </Grid>
+      <Grid container item xs={3} justify="center">
+        <a href="/">
+          <Game />
+        </a>
+      </Grid>
+      <Grid container item xs={3} justify="center">
+        <a href="/">
+          <Game />
+        </a>
+      </Grid>
+      <Grid container item xs={3} justify="center">
+        <a href="/">
+          <Game />
+        </a>
+      </Grid>
+    </React.Fragment>
+  );
+};
 
+const Introduction = () => {
   return (
     <div className="introduction-container">
       <div className="carousel-wrapper">

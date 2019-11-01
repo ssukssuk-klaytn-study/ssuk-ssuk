@@ -20,7 +20,9 @@ const Game = ({ className, classes }) => {
       <Box display="flex">
         <img
           className="game-thumbnail"
-          src="https://picsum.photos/100/100"
+          src={`https://picsum.photos/id/${Math.floor(
+            Math.random(100) * 100
+          )}/100`}
           alt={Math.random(100)}
         ></img>
         <p className="game-description">

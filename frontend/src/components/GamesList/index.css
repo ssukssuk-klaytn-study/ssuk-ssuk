@@ -1,1 +1,13 @@
+.container {
+  margin-bottom: 100px;
+}
 
+.games-container {
+  background-color: #2B3038;
+  padding: 50px 30px;
+}
+
+.games-container .section-title {
+  color: white;
+  font-size: 24px;
+}
