@@ -1,9 +1,10 @@
 import { version } from '../../package.json';
 import { Router } from 'express';
+import funding from './funding';
 import projects from './projects';
 
 export default ({ config, db }) => {
-	let api = Router();
+	const api = Router();
 
 	api.use('/projects', projects())
 	

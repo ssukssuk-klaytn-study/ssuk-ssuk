@@ -10,7 +10,7 @@ import config from './config.json';
 
 db();
 
-let app = express();
+const app = express();
 app.server = http.createServer(app);
 
 // logger
