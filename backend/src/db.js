@@ -11,5 +11,5 @@ export default () => {
   }
   connect();
   mongoose.connection.on('disconnected', connect);
-  require('./models/Projects.js');
+  require('./models/projects.js');
 };
