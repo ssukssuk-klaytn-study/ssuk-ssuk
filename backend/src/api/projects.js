@@ -29,7 +29,7 @@ export default () => {
      */
 	api.get('/', (req, res) => {
         Project.find( (err, projects) => {
-            if(err) return res.status(500).json({'status': 'error'});
+            if(err) return res.status(500).json({ 'result': 'error'});
             res.json(projects);
         })
     });
@@ -58,7 +58,7 @@ export default () => {
      */    
     api.get('/:id', (req, res) => {
         Project.findOne({ _id: req.params.id }, (err, project) => {
-            if (err) return res.status(500).json({ 'status': 'error' })
+            if (err) return res.status(500).json({ 'result': 'error' })
             res.json(project);
         })
     })
@@ -97,9 +97,9 @@ export default () => {
 
         newProject.save()
                 .then(project => {
-                    res.status(200).json({'123': 'sss'})
+                    res.status(200).json({ 'result': 'success' })
                     })
-				.catch(err => res.status(500).json({'123':'fff'}));
+				.catch(err => res.status(500).json({ 'result': 'error' }));
     });
 	return api;
 }
