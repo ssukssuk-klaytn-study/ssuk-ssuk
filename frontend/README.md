@@ -1,4 +1,4 @@
-이 React 코드는 [Create React App](https://github.com/facebook/create-react-app) 을 사용해 구성하였습니다.
+이 React 프로젝트는 [Create React App](https://github.com/facebook/create-react-app) 을 사용해 구성하였습니다.
 
 ## Available Scripts
 
