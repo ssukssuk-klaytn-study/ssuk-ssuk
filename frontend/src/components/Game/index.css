@@ -3,5 +3,7 @@
 }
 
 .game-description {
-  padding: 15px;
+  padding: 0 10px;
+  max-height: 100px;
+  overflow: auto;
 }
