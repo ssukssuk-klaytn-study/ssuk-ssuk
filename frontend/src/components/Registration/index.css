@@ -1,0 +1,70 @@
+.registration-container {
+  padding: 100px 0;
+  background-color: #2b3038;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 80px 100px 50px;
+  border: 1px solid #676767;
+  border-radius: 15px;
+}
+
+.form .project-title,
+.form .project-group,
+.form .project-description {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.form input {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  width: 500px;
+  height: 30px;
+  border: 1px solid #676767;
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  font-size: 21px;
+}
+
+.form textarea {
+  font-size: 21px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #676767;
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  resize: none;
+}
+
+.form .register-wrapper {
+  text-align: right;
+}
+
+.form .register-btn {
+  width: 100px;
+  height: 40px;
+  border: transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  background-color: #0bbe47;
+}
+
+.form .register-btn:focus {
+  outline: none;
+}

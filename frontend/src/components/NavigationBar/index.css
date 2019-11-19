@@ -3,13 +3,14 @@
   padding: 0 100px;
 }
 
-.navigation-bar .games-list-link {
+.navigation-bar .list-link {
   color: white;
   font-size: 18px;
   font-weight: 300;
+  margin-left: 30px;
 }
 
-.navigation-bar .games-list-link:hover {
+.navigation-bar .list-link:hover {
   padding-bottom: 10px;
   animation-name: color-faded-in-out;
   animation-duration: 500ms;
