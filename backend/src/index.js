@@ -7,8 +7,7 @@ import db from './db';
 import middleware from './middleware';
 import api from './api';
 import config from './config.json';
-import swaggerJSDoc from 'swagger-jsdoc';
-import swaggerConfig from './swagger';
+import swaggerSpec from './lib/swagger';
 import swaggerUi from 'swagger-ui-express';
 
 db();
@@ -33,7 +32,7 @@ app.use(middleware({ config, db }));
 app.use('/api', api({ config, db}));
 
 // swagger config
-const swaggerSpec = swaggerJSDoc(swaggerConfig);
+// const swaggerSpec = swaggerJSDoc(swaggerConfig);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.server.listen(process.env.PORT || config.port, () => {

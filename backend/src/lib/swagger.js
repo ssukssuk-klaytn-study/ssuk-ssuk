@@ -1,7 +1,4 @@
-/**
- * Created by wedul on 2018. 8. 30.
- */
-'use strict';
+import swaggerJSDoc from 'swagger-jsdoc';
 
 const swaggerConfig =  {
   swaggerDefinition: {
@@ -71,5 +68,7 @@ const swaggerConfig =  {
   apis: ['./src/api/*.js'] // api 파일 위치들 
 };
 
+const swaggerSpec = swaggerJSDoc(swaggerConfig);
 
-export default swaggerConfig;
+
+export default swaggerSpec;
