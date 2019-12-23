@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import shortid from 'shortid';
 import mongoose from 'mongoose';
+import Caver from "caver-js";
 
 /**
  * @swagger
@@ -11,6 +12,8 @@ import mongoose from 'mongoose';
 export default () => {
     const api = Router();
     const Project = mongoose.model('Project');
+    const caver = new Caver('https://localhost:8551/');
+    const fundingHubContract = new caver.klay.Contract([...], '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe');
     /**
      * @swagger
      * /api/projects/:
@@ -97,6 +100,7 @@ export default () => {
 
         newProject.save()
                 .then(project => {
+                    const proj = fundingHubContract.method.createProject(newProject.data.fundingGoal, newProject.data.deadline);
                     res.status(200).json({ 'result': 'success' })
                     })
 				.catch(err => res.status(500).json({ 'result': 'error' }));
